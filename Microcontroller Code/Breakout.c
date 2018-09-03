@@ -29,7 +29,7 @@ void transmit_data(unsigned char data) {
 		// set SRCLK = 1. Rising edge shifts next bit of data into the shift register
 		PORTB |= 0x02;
 	}
-	// set RCLK = 1. Rising edge copies data from “Shift” register to “Storage” register
+	// set RCLK = 1. Rising edge copies data from â€œShiftâ€ register to â€œStorageâ€ register
 	PORTB |= 0x04;
 	// clears all lines in preparation of a new transmission
 	PORTB = 0x00;
